@@ -9,7 +9,7 @@ package mergeSort.mine;
 class MergeSort {
 
     // Driver code
-    static void main(String args[]) {
+    public static void main(String args[]) {
         int A[] = { 2, 4, 6, 7, 1, 2, 3, 5 };
 
         System.out.println("Given array is");
