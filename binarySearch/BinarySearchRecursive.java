@@ -34,3 +34,23 @@ class BinarySearchRecursive {
         return binarySearch(arr, target, leftIndex, mid - 1);
     }
 }
+
+/*
+ * PSEUDOCODE for BinSearch
+ * BinarySearch(A, target, leftIndex, rightIndex)
+ *     if leftIndex > rightIndex then
+ *         return FALSE
+ *     end if
+ *     
+ *     mid = leftIndex + (rightIndex - leftIndex) / 2
+ *     
+ *     if target == arr[mid] then
+ *         return TRUE
+ *     end if
+ * 
+ *     if arr[mid] < target then
+ *         return binarySearch(arr, target, mid + 1, rightIndex)
+ *     end if
+ *     
+ *     binarySearch(arr, target, leftIndex, mid - 1)
+ */
