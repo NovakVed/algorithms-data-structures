@@ -1,4 +1,4 @@
-package insertionSort;
+package sort.insertionSort;
 
 /*
  * Insertion Sort algorithm

@@ -1,4 +1,4 @@
-package mergeSort.practice;
+package sort.mergeSort.practice;
 
 /**
  * PracticeMergeSort

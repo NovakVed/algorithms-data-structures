@@ -1,4 +1,4 @@
-package mergeSort.book;
+package sort.mergeSort.book;
 
 /**
  * MergeSortBook

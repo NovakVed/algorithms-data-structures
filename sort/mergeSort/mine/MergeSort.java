@@ -1,4 +1,4 @@
-package mergeSort.mine;
+package sort.mergeSort.mine;
 
 /**
  * MergeSort
