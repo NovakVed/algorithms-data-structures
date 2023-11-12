@@ -11,7 +11,7 @@ class InsertionSort {
 
         insertionSort(arr);
 
-        // Solution
+        // Print solution
         for (int i : arr)
             System.out.println(i);
     }
