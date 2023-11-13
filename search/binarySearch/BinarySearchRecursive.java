@@ -7,7 +7,7 @@ package search.binarySearch;
 class BinarySearchRecursive {
     public static void main(String[] args) {
         int[] sortedArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int target = 4;
+        int target = 15;
 
         if (binarySearch(sortedArray, target, 0, sortedArray.length - 1)) {
             System.out.println("Found");
