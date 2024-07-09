@@ -1,6 +1,8 @@
+package search.binarySearch.practice;
+
 class BinarySearchRep1 {
 	public static void main(String[] args) {
-		int[] arr = new int[] {1,2,3,4,5,6,7,8};
+		int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
 		int target = 7;
 		System.out.println(binarySearch(arr, target, 0, arr.length - 1));
 	}
@@ -20,6 +22,5 @@ class BinarySearchRep1 {
 		}
 
 		return binarySearch(arr, target, middleIndex + 1, r);
-		
 	}
-} 
+}
