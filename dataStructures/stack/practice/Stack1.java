@@ -1,9 +1,9 @@
 package practice;
 
 public class Stack1 {
-    int n;
-    int[] arr;
-    int top;
+    private int n;
+    private int[] arr;
+    private int top;
 
     Stack1(int n) {
         this.n = n;

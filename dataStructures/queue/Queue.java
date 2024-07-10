@@ -14,8 +14,7 @@ public class Queue {
             return;
         }
 
-        queue[rear] = item;
-        rear++;
+        queue[rear++] = item;
     }
 
     void deQueue() {
@@ -31,6 +30,7 @@ public class Queue {
         if (rear < capacity) {
             queue[rear] = 0;
         }
+
         rear--;
     }
 
