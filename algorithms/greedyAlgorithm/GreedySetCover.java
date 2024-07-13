@@ -19,7 +19,6 @@ public class GreedySetCover {
         stations.put("kfive", new HashSet<>(Arrays.asList("ca", "az")));
 
         // Find the minimum set of stations using the greedy algorithm
-        // prints it!
         findMinimumCover(stations, allStates).stream().forEach(System.out::println);
     }
 
