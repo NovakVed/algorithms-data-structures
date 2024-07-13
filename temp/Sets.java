@@ -3,7 +3,9 @@ package temp;
 import java.util.HashSet;
 import java.util.Set;
 
-class Intersections {
+// Sets are like lists, except sets can’t have duplicates.
+// You can do some interesting operations on sets, like union, intersection, and difference.
+class Sets {
     // ANSI color codes for different colors
     static final String ANSI_RESET = "\u001B[0m";
     static final String ANSI_RED = "\u001B[31m";
@@ -52,5 +54,4 @@ class Intersections {
         differenceVegetables.removeAll(fruits);
         differenceVegetables.stream().forEach(System.out::println);
     }
-
 }
