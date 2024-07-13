@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr = new int[] { 64, 40, 12, 22, 11, 4, 6, 1, 2, 591, 213, 29 };
+        int[] arr = new int[] { 4, 3, 7, 1, 2, 9, 8, 5 };
         quickSort(arr, 0, arr.length - 1);
         Arrays.stream(arr).forEach(System.out::println);
     }
