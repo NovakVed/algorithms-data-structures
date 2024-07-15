@@ -69,12 +69,12 @@ public class DijkstraAlgorithmGrokkingAlgorithms {
         System.out.println(path);
     }
 
-    private static String findLowestCostNode(Map<String, Integer> costs, Set<String> processed) {
+    private static String findLowestCostNode(Map<String, Integer> costs, Set<String> visited) {
         int lowestCost = Integer.MAX_VALUE;
         String lowestCostNode = null;
         for (Map.Entry<String, Integer> node : costs.entrySet()) {
             int cost = node.getValue();
-            if (cost < lowestCost && !processed.contains(node.getKey())) {
+            if (cost < lowestCost && !visited.contains(node.getKey())) {
                 lowestCost = cost;
                 lowestCostNode = node.getKey();
             }

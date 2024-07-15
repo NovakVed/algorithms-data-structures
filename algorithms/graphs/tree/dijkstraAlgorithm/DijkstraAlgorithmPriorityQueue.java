@@ -3,7 +3,7 @@ package dijkstraAlgorithm;
 import java.util.*;
 
 // TODO: you have to learn how priorityQueue works, and what is the diff between Queue and Heap!
-class DijkstraAlgorithmHeap {
+class DijkstraAlgorithmPriorityQueue {
 
     static class Edge {
         int targetNode;
