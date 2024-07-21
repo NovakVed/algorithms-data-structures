@@ -1,6 +1,6 @@
 import java.util.*;
 
-// TODO: you have to learn how priorityQueue works, and what is the diff between Queue and Heap!
+// TODO: you have to learn how priorityQueue works, and what is the diff between Queue and Heap
 class DijkstraAlgorithmPriorityQueue {
 
     static class Edge {
