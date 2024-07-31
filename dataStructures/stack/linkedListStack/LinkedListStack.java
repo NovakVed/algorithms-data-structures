@@ -1,6 +1,6 @@
 class LinkedListStack {
     static class Stack {
-        Node root;
+        Node head;
 
         class Node {
             int value;
@@ -15,11 +15,11 @@ class LinkedListStack {
         public void add(int value) {
             Node newNode = new Node(value);
             if (isStackEmpty()) {
-                root = newNode;
+                head = newNode;
                 return;
             }
 
-            Node currentNode = root;
+            Node currentNode = head;
             while (currentNode.next != null) {
                 currentNode = currentNode.next;
             }
@@ -31,7 +31,7 @@ class LinkedListStack {
                 System.err.println("Stack is empty");
                 return -1;
             }
-            return root.value;
+            return head.value;
         }
 
         public int pop() {
@@ -40,18 +40,18 @@ class LinkedListStack {
                 return -1;
             }
 
-            int currentNodeValue = root.value;
-            if (root.next != null) {
-                root = root.next;
+            int currentNodeValue = head.value;
+            if (head.next != null) {
+                head = head.next;
             } else {
-                root = null;
+                head = null;
             }
 
             return currentNodeValue;
         }
 
         public boolean isStackEmpty() {
-            return root == null;
+            return head == null;
         }
     }
 
