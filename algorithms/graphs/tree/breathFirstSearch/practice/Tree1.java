@@ -15,12 +15,12 @@ public class Tree1 {
     public static void main(String[] args) {
         while (!queue.isEmpty()) {
             String file = queue.poll();
-            if (!file.contains(".")) {
+            if (!file.endsWith(".png")) {
                 for (String subFile : fileSystem.get(file)) {
                     queue.add(subFile);
                 }
-            }
-            System.out.println(file);
+            } else
+                System.out.println(file);
         }
     }
 }
