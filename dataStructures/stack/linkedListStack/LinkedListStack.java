@@ -12,18 +12,10 @@ class LinkedListStack {
             }
         }
 
-        public void add(int value) {
+        public void push(int value) {
             Node newNode = new Node(value);
-            if (isStackEmpty()) {
-                head = newNode;
-                return;
-            }
-
-            Node currentNode = head;
-            while (currentNode.next != null) {
-                currentNode = currentNode.next;
-            }
-            currentNode.next = newNode;
+            newNode.next = head;
+            head = newNode;
         }
 
         public int peek() {
@@ -40,14 +32,9 @@ class LinkedListStack {
                 return -1;
             }
 
-            int currentNodeValue = head.value;
-            if (head.next != null) {
-                head = head.next;
-            } else {
-                head = null;
-            }
-
-            return currentNodeValue;
+            int value = head.value;
+            head = head.next;
+            return value;
         }
 
         public boolean isStackEmpty() {
@@ -58,9 +45,9 @@ class LinkedListStack {
     public static void main(String[] args) {
         var stack = new Stack() {
             {
-                add(10);
-                add(20);
-                add(30);
+                push(10);
+                push(20);
+                push(30);
             }
         };
 
