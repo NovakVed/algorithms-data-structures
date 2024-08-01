@@ -36,14 +36,13 @@ public class Queue {
 
     // print queue elements
     void queueDisplay() {
-        int i;
         if (front == rear) {
             System.out.printf("Queue is Empty\n");
             return;
         }
 
         // traverse front to rear and print elements
-        for (i = front; i < rear; i++) {
+        for (int i = front; i < rear; i++) {
             System.out.printf(" %d , ", queue[i]);
         }
         return;
@@ -86,6 +85,7 @@ public class Queue {
         // print Queue elements
         q.queueDisplay();
 
+        q.deQueue();
         q.deQueue();
         q.deQueue();
         System.out.printf("\nQueue after two dequeue operations:");
