@@ -37,7 +37,7 @@ class BreathFirst1 {
 
         Set<String> visited = new HashSet<>();
         while (!queue.isEmpty()) {
-            String currentFriend = queue.peek();
+            String currentFriend = queue.poll();
             for (String friend : friendsNetwork.get(currentFriend)) {
                 if (visited.add(friend)) {
                     if (friend.endsWith("m")) { // how we identify mango salesman
@@ -46,7 +46,6 @@ class BreathFirst1 {
                     queue.add(friend);
                 }
             }
-            queue.remove(currentFriend);
         }
         return false;
     }
