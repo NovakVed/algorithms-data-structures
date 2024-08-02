@@ -1,4 +1,4 @@
-class BinarySearchRep1 {
+class BinarySearch1 {
 	public static void main(String[] args) {
 		int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
 		int target = 7;
@@ -6,7 +6,7 @@ class BinarySearchRep1 {
 	}
 
 	static int binarySearch(int[] arr, int target, int l, int r) {
-		if (l >= r) {
+		if (l > r) {
 			return -1;
 		}
 
