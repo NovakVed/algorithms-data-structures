@@ -1,4 +1,4 @@
-package algorithms.greedyAlgorithm;
+package algorithms.greedyAlgorithms;
 
 public class ClassroomSchedulingProblem {
 
