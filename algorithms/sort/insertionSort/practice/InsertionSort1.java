@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class InsertionSortRep1 {
+public class InsertionSort1 {
     public static void main(String[] args) {
         int[] unsortedArray = new int[] { 4, 1, 6, 8, 9, 2, 3, 0, 2 };
         insertionSort(unsortedArray);
