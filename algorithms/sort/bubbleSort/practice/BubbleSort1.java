@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * BubbleSortRep1
  */
-public class BubbleSortRep1 {
+public class BubbleSort1 {
     public static void main(String[] args) {
         int[] unsortedArray = new int[] { 4, 1, 2, 6, 7, 9, 2, 1, 6, 0, };
         bubbleSort(unsortedArray);
