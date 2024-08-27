@@ -1,30 +1,33 @@
-import java.util.Arrays;
-
-public class MergeSortRep2 {
+/**
+ * PracticeMergeSort
+ * Practicing merge sort!
+ */
+class MergeSort1 {
     public static void main(String[] args) {
-        int[] unsortedArray = new int[] { 2, 4, 6, 7, 1, 2, 3, 5 };
-        mergeSort(unsortedArray);
+        int[] arr = { 4, 3, 5, 6, 8, 1, 2, 5, 7, 9, 2 };
+        printArray(arr);
 
-        System.out.print("[");
-        Arrays.stream(unsortedArray).forEach(s -> System.out.print(s + ", "));
-        System.out.println("]");
+        mergeSort(arr);
+
+        System.out.println("\nSorted array: ");
+        printArray(arr);
     }
 
-    static void mergeSort(int[] arr) {
+    private static void mergeSort(int[] arr) {
         if (arr.length < 2) {
             return;
         }
 
         int middleIndex = arr.length / 2;
+
         int[] leftArr = new int[middleIndex];
         int[] rightArr = new int[arr.length - middleIndex];
-
-        for (int i = 0; i < rightArr.length; i++) {
+        for (int i = 0; i < middleIndex; i++) {
             leftArr[i] = arr[i];
         }
 
         for (int j = 0; j < rightArr.length; j++) {
-            rightArr[j] = arr[middleIndex + j];
+            rightArr[j] = arr[j + middleIndex];
         }
 
         mergeSort(leftArr);
@@ -37,7 +40,7 @@ public class MergeSortRep2 {
         int i = 0, j = 0, k = 0;
 
         while (i < leftArr.length && j < rightArr.length) {
-            if (leftArr[i] < rightArr[j]) {
+            if (leftArr[i] <= rightArr[j]) {
                 arr[k] = leftArr[i++];
             } else {
                 arr[k] = rightArr[j++];
@@ -51,6 +54,17 @@ public class MergeSortRep2 {
 
         while (j < rightArr.length) {
             arr[k++] = rightArr[j++];
+        }
+    }
+
+    static void printArray(int[] arr) {
+        System.out.print("Array: [");
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1) {
+                System.out.print(arr[i] + "]\n");
+                break;
+            }
+            System.out.print(arr[i] + ", ");
         }
     }
 }
