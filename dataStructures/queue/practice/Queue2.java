@@ -1,3 +1,5 @@
+package practice;
+
 class Queue2 {
 	static class Queue {
 		int front, rear, size;
@@ -23,7 +25,7 @@ class Queue2 {
 				return;
 			}
 
-			for (int i = front; i < rear - 1; i++)
+			for (int i = front; i < rear; i++)
 				arr[i] = arr[i + 1];
 
 			if (rear < size)
