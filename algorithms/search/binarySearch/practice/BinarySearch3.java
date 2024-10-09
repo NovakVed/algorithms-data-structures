@@ -15,7 +15,7 @@ public class BinarySearch3 {
         if (l >= r)
             return -1;
 
-        int m = (l + r) / 2;
+        int m = l + (r - l) / 2;
         if (arr[m] == target)
             return m;
         if (arr[m] > target)
