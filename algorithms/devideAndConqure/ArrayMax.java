@@ -1,5 +1,6 @@
 package algorithms.devideAndConqure;
 
+// Write a recursive function to find the maximum number in a list.
 public class ArrayMax {
     public static void main(String[] args) {
         int[] arr = new int[] { 1, 9, 3, 8, 5 };

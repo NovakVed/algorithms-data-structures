@@ -1,5 +1,6 @@
 package algorithms.devideAndConqure;
 
+// Write a recursive function to count the number of items in a list.
 public class ArrayCount {
 
     public static void main(String[] args) {
