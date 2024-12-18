@@ -8,8 +8,7 @@ public class ArrayMax {
     }
 
     private static int max(int[] arr, int i) {
-        if (i >= arr.length - 1)
-            return arr[i];
+        if (i >= arr.length - 1) return arr[i];
         int next = max(arr, ++i);
         return arr[i] > next ? arr[i] : next;
     }

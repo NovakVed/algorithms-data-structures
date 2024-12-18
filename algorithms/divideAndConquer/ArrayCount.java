@@ -9,8 +9,7 @@ public class ArrayCount {
     }
 
     private static int count(int[] arr, int i) {
-        if (i >= arr.length - 1)
-            return i;
+        if (i >= arr.length - 1) return i;
         return count(arr, ++i);
     }
 }
