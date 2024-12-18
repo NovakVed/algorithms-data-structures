@@ -1,6 +1,28 @@
 package practice;
 
 public class Stack3 {
+
+    public static void main(String[] args) {
+        Stack stack = new Stack() {
+            {
+                push(1);
+                push(2);
+                push(3);
+            }
+        };
+        try {
+            System.out.println(stack.peek());
+            System.out.println(stack.pop());
+            System.out.println(stack.pop());
+            System.out.println(stack.pop());
+            System.out.println(stack.pop());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        stack.push(4);
+        System.out.println(stack.pop());
+    }
+
     static class Stack {
         private Node head;
 
@@ -42,26 +64,5 @@ public class Stack3 {
                 this.next = null;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        Stack stack = new Stack() {
-            {
-                push(1);
-                push(2);
-                push(3);
-            }
-        };
-        try {
-            System.out.println(stack.peek());
-            System.out.println(stack.pop());
-            System.out.println(stack.pop());
-            System.out.println(stack.pop());
-            System.out.println(stack.pop());
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        stack.push(4);
-        System.out.println(stack.pop());
     }
 }
