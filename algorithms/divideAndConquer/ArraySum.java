@@ -1,4 +1,4 @@
-package algorithms.devideAndConqure;
+package algorithms.divideAndConquer;
 
 // Write out the recursive function to get sum of numbers in a list.
 public class ArraySum {
@@ -8,7 +8,8 @@ public class ArraySum {
     }
 
     private static int sum(int[] arr, int i) {
-        if (i >= arr.length - 1) return arr[i];
+        if (i >= arr.length - 1)
+            return arr[i];
         return arr[i] + sum(arr, ++i);
     }
 

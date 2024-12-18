@@ -1,4 +1,4 @@
-package algorithms.devideAndConqure;
+package algorithms.divideAndConquer;
 
 // Write a recursive function to count the number of items in a list.
 public class ArrayCount {
@@ -9,7 +9,8 @@ public class ArrayCount {
     }
 
     private static int count(int[] arr, int i) {
-        if (i >= arr.length - 1) return i;
+        if (i >= arr.length - 1)
+            return i;
         return count(arr, ++i);
     }
 }
