@@ -3,14 +3,14 @@ import java.util.Queue;
 import java.util.LinkedList;
 
 class DepthFirstSearchTree2 {
-    String root = "pics";
-    Map<String, String[]> fileSystem = Map.of(
+    static String root = "pics";
+    static Map<String, String[]> fileSystem = Map.of(
             "pics", new String[] { "2001", "odyssey.png" },
             "2001", new String[] { "a.png", "space.png" });
 
-    Queue<String> queue;
+    static Queue<String> queue;
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         queue = new LinkedList<>() {
             {
                 add(root);
@@ -19,7 +19,7 @@ class DepthFirstSearchTree2 {
         depthFirstSearch();
     }
 
-    private void depthFirstSearch() {
+    private static void depthFirstSearch() {
         if (queue.isEmpty()) {
             return;
         }
