@@ -1,20 +1,23 @@
-def quicksort(arr, low, high):
-    if (low >= high):
+import random
+
+def quicksort(arr, l, r):
+    if l >= r:
         return
     
-    pivot_index = partition(arr, low, high)
-    quicksort(arr, low, pivot_index - 1)
-    quicksort(arr, pivot_index + 1, high)
+    pi = partition(arr, l, r)
+    quicksort(arr, l, pi - 1)
+    quicksort(arr, pi + 1, r)
     return arr
-    
-def partition(arr, low, high):
-    pivot = arr[high]
-    i = low - 1
-    for j in range(low, high):
-        if arr[j] <= pivot:
+
+def partition(arr, l, r):
+    p = random.randint(l, r)
+    arr[p], arr[r] = arr[r], arr[p]
+    i = l - 1
+    for j in range(l, r):
+        if arr[j] <= arr[r]:
             i += 1
             arr[i], arr[j] = arr[j], arr[i]
-    arr[i + 1], arr[high] = arr[high], arr[i + 1]
+    arr[i + 1], arr[r] = arr[r], arr[i + 1]
     return i + 1
 
 nums = [2, 8, 5, 3, 9, 4, 1]
