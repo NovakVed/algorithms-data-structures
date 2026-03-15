@@ -10,8 +10,8 @@ def quicksort(arr, l, r):
     return arr
 
 def partition(arr, l, r):
-    p = random.randint(l, r)
-    arr[p], arr[r] = arr[r], arr[p]
+    pi = random.randint(l, r)
+    arr[pi], arr[r] = arr[r], arr[pi]
     i = l - 1
     for j in range(l, r):
         if arr[j] <= arr[r]:
