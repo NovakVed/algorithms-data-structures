@@ -17,15 +17,6 @@ class LinkedList:
             current_node = current_node.next
         current_node.next = new_node
     
-    def remove(self):
-        if self.head is None:
-            print('Unable to remove empty linked list')
-            return
-        if self.head.next is None:
-            self.head = None
-            return
-        self.head = self.head.next
-
     def printList(self):
         if self.head is None:
             print('Unable to print empty linked list')
