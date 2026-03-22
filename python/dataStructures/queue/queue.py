@@ -25,7 +25,7 @@ class Queue:
         self.head = self.head.next
         print(value)
     
-    def printQueue(self):
+    def print_queue(self):
         if self.head is None:
             print('Queue is already empty')
         current_node = self.head
@@ -40,4 +40,4 @@ queue.enqueue(3)
 queue.enqueue(4)
 
 print(queue.deque())
-queue.printQueue()
+queue.print_queue()

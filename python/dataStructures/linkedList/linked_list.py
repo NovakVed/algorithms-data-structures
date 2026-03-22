@@ -17,7 +17,7 @@ class LinkedList:
             current_node = current_node.next
         current_node.next = new_node
     
-    def printList(self):
+    def print_list(self):
         if self.head is None:
             print('Unable to print empty linked list')
             return
@@ -32,4 +32,4 @@ list.insert(2)
 list.insert(3)
 list.insert(4)
 
-list.printList()
+list.print_list()

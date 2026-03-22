@@ -20,7 +20,7 @@ class Stack:
         self.head = self.head.next
         return value
 
-    def printStack(self):
+    def print_stack(self):
         if self.head is None:
             print('Stack is empty')
             return
@@ -35,6 +35,6 @@ stack.push(2)
 stack.push(3)
 stack.push(4)
 
-print(stack.printStack())
+print(stack.print_stack())
 print(stack.pop())
-print(stack.printStack())
+print(stack.print_stack())

@@ -1,4 +1,4 @@
-def insertionSort(nums):
+def insertion_sort(nums):
     for i in range(1, len(nums)):
         key = nums[i]
         j = i - 1
@@ -10,4 +10,4 @@ def insertionSort(nums):
     return nums
 
 nums = [2, 5, 8, 3, 9, 4, 1]
-print(insertionSort(nums))
+print(insertion_sort(nums))

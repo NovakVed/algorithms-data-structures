@@ -1,4 +1,4 @@
-def selectionSort(nums):
+def selection_sort(nums):
     for i in range(0, len(nums)):
         smallestIndex = i
         for j in range(i + 1, len(nums)):
@@ -14,4 +14,4 @@ def selectionSort(nums):
     return nums
 
 nums = [2, 8, 5, 3, 9, 4, 1]
-print(selectionSort(nums))
+print(selection_sort(nums))
